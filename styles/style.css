@@ -1,0 +1,249 @@
+body {
+  background-image: linear-gradient(345deg, #D8D5DB 0, #d3d4d5 50%, #b9c0c7 100%);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : column;
+  padding-top    : 150px;
+  color          : var(--main-font-color);
+}
+
+#header-texto {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  flex-direction : column;
+}
+
+h1 {
+  font-size  : 120px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+h2 {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.fecha {
+  font-family: 'Cinzel Decorative', serif;
+  font-size  : 25px;
+}
+
+.fecha::before {
+  border  : 1px solid var(--main-font-color);
+  content : '';
+  display : table-cell;
+  position: relative;
+  top     : 0.9em;
+  width   : 1%;
+  left    : -120%;
+}
+
+.fecha::after {
+  border  : 1px solid var(--main-font-color);
+  content : '';
+  display : table-cell;
+  position: relative;
+  top     : -0.45em;
+  width   : 1%;
+  right   : -120%;
+}
+
+.frase-container {
+  margin    : 1em 0;
+  text-align: center;
+}
+
+.frase {
+  font-family: 'Merriweather', serif;
+  font-style : italic;
+}
+
+.flecha {
+  animation: arrow 1s ease-in-out infinite;
+  color    : var(--main-font-color);
+  margin   : 90px 0 0 0;
+}
+
+
+
+#countdown-container {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+  margin-top     : 80px;
+}
+
+#img-countdown img {
+  width: 500px;
+}
+
+#countdown {
+  display       : flex;
+  align-items   : center;
+  flex-direction: column;
+  font-family   : 'Nunito', sans-serif;
+  color         : rgb(235, 235, 235);
+  position      : absolute;
+}
+
+#countdown h3 {
+  font-size  : 30px;
+  font-family: 'Young Serif', serif;
+  font-weight: lighter;
+}
+
+.reloj {
+  display        : flex;
+  justify-content: center;
+}
+
+.countdown-item {
+  text-align: center;
+  margin    : 0 10px;
+  font-size : 36px;
+}
+
+.countdown-number {
+  font-size: 36px;
+}
+
+.countdown-label {
+  font-size : 16px;
+  margin-top: -10px;
+}
+
+
+
+#datos {
+  margin    : auto;
+  margin-top: 90px;
+  width     : 60%;
+}
+
+.linea {
+  height: 0;
+  border: 1px solid #46494C;
+}
+
+#datos h2 {
+  font-family: 'Young Serif', serif;
+  font-size  : 60px;
+  font-weight: 900;
+  text-align : center;
+}
+
+#datos-grid {
+  text-align           : center;
+  margin-top           : 100px;
+  font-family          : 'Nunito', sans-serif;
+  display              : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap                  : 100px;
+}
+
+.card {
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  flex-direction  : column;
+  background-color: #dddddd;
+  padding         : 50px 10px;
+  height          : 11em;
+  border-radius   : 10px;
+  position        : relative;
+  box-shadow      : 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color    : #46494C;
+  font-size: 30px;
+}
+
+.card span {
+  font-size: 17px;
+}
+
+dotlottie-player {
+  width : 80px;
+  filter: brightness(0);
+}
+
+.dress-code {
+  animation: pop 1s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.icon-container {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  position        : absolute;
+  top             : -50px;
+  width           : 90px;
+  height          : 90px;
+  border-radius   : 50%;
+  background-color: #ddd;
+  border          : 1px solid #000;
+  font-size       : 50px;
+}
+
+
+.card-link {
+  background-color: #d88d62ff;
+  text-decoration: none;
+  color           : rgb(235, 235, 235);
+  padding         : 10px 30px;
+  margin-top: 20px;
+  width           : 70%;
+  font-size       : 15px;
+  border-radius   : 30px 5px;
+  transition      : all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; /* Para navegadores basados en WebKit (como Safari) */
+
+  user-select: none;
+
+}
+
+.card-link:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  transform : scale(1.06);
+}
+
+footer {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  color           : #fff;
+  text-align      : cemter;
+  font-family     : 'Nunito', sans-serif;
+  font-size       : 10px;
+  margin-top      : 100px;
+  padding         : 15px 0;
+  background-color: rgb(92, 92, 92);
+}
+
+#toggle-audio {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  background-color: #d88d62ff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* Para navegadores basados en WebKit (como Safari) */
+  z-index: 1;
+}
